@@ -1,0 +1,1 @@
+ALTER TABLE `teams` ADD `isPersonal` boolean DEFAULT false NOT NULL;

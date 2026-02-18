@@ -1,0 +1,2333 @@
+[
+  {
+    "name": "Hospital Mater Dei Contorno",
+    "code": "HMDCMG",
+    "city": "Belo Horizonte",
+    "state": "MG",
+    "type": "private",
+    "network": "Rede Mater Dei",
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Mater Dei Santo Agostinho",
+    "code": "HMDSAMG",
+    "city": "Belo Horizonte",
+    "state": "MG",
+    "type": "private",
+    "network": "Rede Mater Dei",
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Mater Dei Betim",
+    "code": "HMDBMG",
+    "city": "Betim",
+    "state": "MG",
+    "type": "private",
+    "network": "Rede Mater Dei",
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Mater Dei Salvador",
+    "code": "HMDSBA",
+    "city": "Salvador",
+    "state": "BA",
+    "type": "private",
+    "network": "Rede Mater Dei",
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Mater Dei Premium",
+    "code": "HMDPMG",
+    "city": "Belo Horizonte",
+    "state": "MG",
+    "type": "private",
+    "network": "Rede Mater Dei",
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Felício Rocho",
+    "code": "HFRMG",
+    "city": "Belo Horizonte",
+    "state": "MG",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Lifecenter",
+    "code": "HLMG",
+    "city": "Belo Horizonte",
+    "state": "MG",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Vera Cruz",
+    "code": "HVCMG",
+    "city": "Belo Horizonte",
+    "state": "MG",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Biocor",
+    "code": "HBMG",
+    "city": "Nova Lima",
+    "state": "MG",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Vila da Serra",
+    "code": "HVDSMG",
+    "city": "Nova Lima",
+    "state": "MG",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Madre Teresa",
+    "code": "HMTMG",
+    "city": "Belo Horizonte",
+    "state": "MG",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Socor",
+    "code": "HSMG",
+    "city": "Belo Horizonte",
+    "state": "MG",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Semper",
+    "code": "HSMG2",
+    "city": "Belo Horizonte",
+    "state": "MG",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Evangélico de Belo Horizonte",
+    "code": "HEDBHMG",
+    "city": "Belo Horizonte",
+    "state": "MG",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital das Clínicas da UFMG",
+    "code": "HDCDUMG",
+    "city": "Belo Horizonte",
+    "state": "MG",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital João XXIII",
+    "code": "HJXMG",
+    "city": "Belo Horizonte",
+    "state": "MG",
+    "type": "public",
+    "network": "FHEMIG",
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Eduardo de Menezes",
+    "code": "HEDMMG",
+    "city": "Belo Horizonte",
+    "state": "MG",
+    "type": "public",
+    "network": "FHEMIG",
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Julia Kubitschek",
+    "code": "HJKMG",
+    "city": "Belo Horizonte",
+    "state": "MG",
+    "type": "public",
+    "network": "FHEMIG",
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Alberto Cavalcanti",
+    "code": "HACMG",
+    "city": "Belo Horizonte",
+    "state": "MG",
+    "type": "public",
+    "network": "FHEMIG",
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Infantil João Paulo II",
+    "code": "HIJPIMG",
+    "city": "Belo Horizonte",
+    "state": "MG",
+    "type": "public",
+    "network": "FHEMIG",
+    "isPreRegistered": true
+  },
+  {
+    "name": "Maternidade Odete Valadares",
+    "code": "MOVMG",
+    "city": "Belo Horizonte",
+    "state": "MG",
+    "type": "public",
+    "network": "FHEMIG",
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital de Pronto-Socorro João XXIII",
+    "code": "HDPJXMG",
+    "city": "Belo Horizonte",
+    "state": "MG",
+    "type": "public",
+    "network": "FHEMIG",
+    "isPreRegistered": true
+  },
+  {
+    "name": "Santa Casa de Belo Horizonte",
+    "code": "SCDBHMG",
+    "city": "Belo Horizonte",
+    "state": "MG",
+    "type": "mixed",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Unimed BH",
+    "code": "HUBMG",
+    "city": "Belo Horizonte",
+    "state": "MG",
+    "type": "private",
+    "network": "Unimed",
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital São Francisco de Assis",
+    "code": "HSFDAMG",
+    "city": "Belo Horizonte",
+    "state": "MG",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Luxemburgo",
+    "code": "HLMG2",
+    "city": "Belo Horizonte",
+    "state": "MG",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Regional de Juiz de Fora",
+    "code": "HRDJDFMG",
+    "city": "Juiz de Fora",
+    "state": "MG",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Universitário da UFJF",
+    "code": "HUDUMG",
+    "city": "Juiz de Fora",
+    "state": "MG",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Santa Casa de Juiz de Fora",
+    "code": "SCDJDFMG",
+    "city": "Juiz de Fora",
+    "state": "MG",
+    "type": "mixed",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Aroldo Tourinho",
+    "code": "HATMG",
+    "city": "Montes Claros",
+    "state": "MG",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Universitário Clemente de Faria",
+    "code": "HUCDFMG",
+    "city": "Montes Claros",
+    "state": "MG",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Santa Casa de Montes Claros",
+    "code": "SCDMCMG",
+    "city": "Montes Claros",
+    "state": "MG",
+    "type": "mixed",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital São José",
+    "code": "HSJMG",
+    "city": "Uberlândia",
+    "state": "MG",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital de Clínicas de Uberlândia",
+    "code": "HDCDUMG2",
+    "city": "Uberlândia",
+    "state": "MG",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Albert Einstein",
+    "code": "HAESP",
+    "city": "São Paulo",
+    "state": "SP",
+    "type": "private",
+    "network": "Einstein",
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Albert Einstein Morumbi",
+    "code": "HAEMSP",
+    "city": "São Paulo",
+    "state": "SP",
+    "type": "private",
+    "network": "Einstein",
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Albert Einstein Perdizes",
+    "code": "HAEPSP",
+    "city": "São Paulo",
+    "state": "SP",
+    "type": "private",
+    "network": "Einstein",
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Sírio-Libanês",
+    "code": "HSSP",
+    "city": "São Paulo",
+    "state": "SP",
+    "type": "private",
+    "network": "Sírio-Libanês",
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Sírio-Libanês Brasília",
+    "code": "HSBDF",
+    "city": "Brasília",
+    "state": "DF",
+    "type": "private",
+    "network": "Sírio-Libanês",
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Beneficência Portuguesa",
+    "code": "HBPSP",
+    "city": "São Paulo",
+    "state": "SP",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Oswaldo Cruz",
+    "code": "HOCSP",
+    "city": "São Paulo",
+    "state": "SP",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Nove de Julho",
+    "code": "HNDJSP",
+    "city": "São Paulo",
+    "state": "SP",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital São Luiz Morumbi",
+    "code": "HSLMSP",
+    "city": "São Paulo",
+    "state": "SP",
+    "type": "private",
+    "network": "Rede D'Or",
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital São Luiz Itaim",
+    "code": "HSLISP",
+    "city": "São Paulo",
+    "state": "SP",
+    "type": "private",
+    "network": "Rede D'Or",
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital São Luiz Jabaquara",
+    "code": "HSLJSP",
+    "city": "São Paulo",
+    "state": "SP",
+    "type": "private",
+    "network": "Rede D'Or",
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital São Luiz Anália Franco",
+    "code": "HSLAFSP",
+    "city": "São Paulo",
+    "state": "SP",
+    "type": "private",
+    "network": "Rede D'Or",
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Copa D'Or",
+    "code": "HCDRJ",
+    "city": "Rio de Janeiro",
+    "state": "RJ",
+    "type": "private",
+    "network": "Rede D'Or",
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Quinta D'Or",
+    "code": "HQDRJ",
+    "city": "Rio de Janeiro",
+    "state": "RJ",
+    "type": "private",
+    "network": "Rede D'Or",
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Rios D'Or",
+    "code": "HRDRJ",
+    "city": "Rio de Janeiro",
+    "state": "RJ",
+    "type": "private",
+    "network": "Rede D'Or",
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Barra D'Or",
+    "code": "HBDRJ",
+    "city": "Rio de Janeiro",
+    "state": "RJ",
+    "type": "private",
+    "network": "Rede D'Or",
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Norte D'Or",
+    "code": "HNDRJ",
+    "city": "Rio de Janeiro",
+    "state": "RJ",
+    "type": "private",
+    "network": "Rede D'Or",
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Niterói D'Or",
+    "code": "HNDRJ2",
+    "city": "Niterói",
+    "state": "RJ",
+    "type": "private",
+    "network": "Rede D'Or",
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Caxias D'Or",
+    "code": "HCDRJ2",
+    "city": "Duque de Caxias",
+    "state": "RJ",
+    "type": "private",
+    "network": "Rede D'Or",
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Assunção",
+    "code": "HASP",
+    "city": "São Bernardo do Campo",
+    "state": "SP",
+    "type": "private",
+    "network": "Rede D'Or",
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital e Maternidade Brasil",
+    "code": "HEMBSP",
+    "city": "Santo André",
+    "state": "SP",
+    "type": "private",
+    "network": "Rede D'Or",
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Villa-Lobos",
+    "code": "HVSP",
+    "city": "São Paulo",
+    "state": "SP",
+    "type": "private",
+    "network": "Rede D'Or",
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital do Coração (HCor)",
+    "code": "HDCSP",
+    "city": "São Paulo",
+    "state": "SP",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Samaritano Higienópolis",
+    "code": "HSHSP",
+    "city": "São Paulo",
+    "state": "SP",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Samaritano Paulista",
+    "code": "HSPSP",
+    "city": "São Paulo",
+    "state": "SP",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Santa Catarina",
+    "code": "HSCSP",
+    "city": "São Paulo",
+    "state": "SP",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital A.C. Camargo Cancer Center",
+    "code": "HACCCSP",
+    "city": "São Paulo",
+    "state": "SP",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital das Clínicas da USP",
+    "code": "HDCDUSP",
+    "city": "São Paulo",
+    "state": "SP",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital São Paulo (UNIFESP)",
+    "code": "HSPSP2",
+    "city": "São Paulo",
+    "state": "SP",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Santa Marcelina",
+    "code": "HSMSP",
+    "city": "São Paulo",
+    "state": "SP",
+    "type": "mixed",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Municipal Dr. Mário Gatti",
+    "code": "HMDMGSP",
+    "city": "Campinas",
+    "state": "SP",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital de Clínicas da UNICAMP",
+    "code": "HDCDUSP2",
+    "city": "Campinas",
+    "state": "SP",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital PUC-Campinas",
+    "code": "HPSP",
+    "city": "Campinas",
+    "state": "SP",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Unimed Campinas",
+    "code": "HUCSP",
+    "city": "Campinas",
+    "state": "SP",
+    "type": "private",
+    "network": "Unimed",
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital de Base de São José do Rio Preto",
+    "code": "HDBDSJSP",
+    "city": "São José do Rio Preto",
+    "state": "SP",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital de Câncer de Barretos",
+    "code": "HDCDBSP",
+    "city": "Barretos",
+    "state": "SP",
+    "type": "mixed",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Estadual de Ribeirão Preto",
+    "code": "HEDRPSP",
+    "city": "Ribeirão Preto",
+    "state": "SP",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital das Clínicas de Ribeirão Preto",
+    "code": "HDCDRPSP",
+    "city": "Ribeirão Preto",
+    "state": "SP",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Santa Casa de São Paulo",
+    "code": "SCDSPSP",
+    "city": "São Paulo",
+    "state": "SP",
+    "type": "mixed",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Infantil Sabará",
+    "code": "HISSP",
+    "city": "São Paulo",
+    "state": "SP",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Alemão Oswaldo Cruz",
+    "code": "HAOCSP",
+    "city": "São Paulo",
+    "state": "SP",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Santa Paula",
+    "code": "HSPSP3",
+    "city": "São Paulo",
+    "state": "SP",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Moriah",
+    "code": "HMSP",
+    "city": "São Paulo",
+    "state": "SP",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital IGESP",
+    "code": "HISP",
+    "city": "São Paulo",
+    "state": "SP",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Nipo-Brasileiro",
+    "code": "HNSP",
+    "city": "São Paulo",
+    "state": "SP",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Leforte",
+    "code": "HLSP",
+    "city": "São Paulo",
+    "state": "SP",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital São Camilo Pompeia",
+    "code": "HSCPSP",
+    "city": "São Paulo",
+    "state": "SP",
+    "type": "private",
+    "network": "São Camilo",
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital São Camilo Santana",
+    "code": "HSCSSP",
+    "city": "São Paulo",
+    "state": "SP",
+    "type": "private",
+    "network": "São Camilo",
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital São Camilo Ipiranga",
+    "code": "HSCISP",
+    "city": "São Paulo",
+    "state": "SP",
+    "type": "private",
+    "network": "São Camilo",
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Edmundo Vasconcelos",
+    "code": "HEVSP",
+    "city": "São Paulo",
+    "state": "SP",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Metropolitano",
+    "code": "HMSP2",
+    "city": "São Paulo",
+    "state": "SP",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Samaritano Botafogo",
+    "code": "HSBRJ",
+    "city": "Rio de Janeiro",
+    "state": "RJ",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Pró-Cardíaco",
+    "code": "HPRJ",
+    "city": "Rio de Janeiro",
+    "state": "RJ",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Universitário Clementino Fraga Filho (UFRJ)",
+    "code": "HUCFFRJ",
+    "city": "Rio de Janeiro",
+    "state": "RJ",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Federal de Bonsucesso",
+    "code": "HFDBRJ",
+    "city": "Rio de Janeiro",
+    "state": "RJ",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Federal dos Servidores do Estado",
+    "code": "HFDSDERJ",
+    "city": "Rio de Janeiro",
+    "state": "RJ",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Federal do Andaraí",
+    "code": "HFDARJ",
+    "city": "Rio de Janeiro",
+    "state": "RJ",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Federal de Ipanema",
+    "code": "HFDIRJ",
+    "city": "Rio de Janeiro",
+    "state": "RJ",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Federal Cardoso Fontes",
+    "code": "HFCFRJ",
+    "city": "Rio de Janeiro",
+    "state": "RJ",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Municipal Souza Aguiar",
+    "code": "HMSARJ",
+    "city": "Rio de Janeiro",
+    "state": "RJ",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Municipal Miguel Couto",
+    "code": "HMMCRJ",
+    "city": "Rio de Janeiro",
+    "state": "RJ",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Municipal Salgado Filho",
+    "code": "HMSFRJ",
+    "city": "Rio de Janeiro",
+    "state": "RJ",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Municipal Lourenço Jorge",
+    "code": "HMLJRJ",
+    "city": "Rio de Janeiro",
+    "state": "RJ",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Instituto Nacional de Traumatologia e Ortopedia (INTO)",
+    "code": "INDTEORJ",
+    "city": "Rio de Janeiro",
+    "state": "RJ",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Instituto Nacional de Cardiologia",
+    "code": "INDCRJ",
+    "city": "Rio de Janeiro",
+    "state": "RJ",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Instituto Nacional de Câncer (INCA)",
+    "code": "INDCRJ2",
+    "city": "Rio de Janeiro",
+    "state": "RJ",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Unimed Rio",
+    "code": "HURRJ",
+    "city": "Rio de Janeiro",
+    "state": "RJ",
+    "type": "private",
+    "network": "Unimed",
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Vitória",
+    "code": "HVRJ",
+    "city": "Rio de Janeiro",
+    "state": "RJ",
+    "type": "private",
+    "network": "Rede D'Or",
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Badim",
+    "code": "HBRJ",
+    "city": "Rio de Janeiro",
+    "state": "RJ",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Adventista Silvestre",
+    "code": "HASRJ",
+    "city": "Rio de Janeiro",
+    "state": "RJ",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital São Lucas Copacabana",
+    "code": "HSLCRJ",
+    "city": "Rio de Janeiro",
+    "state": "RJ",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Glória D'Or",
+    "code": "HGDRJ",
+    "city": "Rio de Janeiro",
+    "state": "RJ",
+    "type": "private",
+    "network": "Rede D'Or",
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Moinhos de Vento",
+    "code": "HMDVRS",
+    "city": "Porto Alegre",
+    "state": "RS",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital de Clínicas de Porto Alegre",
+    "code": "HDCDPARS",
+    "city": "Porto Alegre",
+    "state": "RS",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital São Lucas da PUCRS",
+    "code": "HSLDPRS",
+    "city": "Porto Alegre",
+    "state": "RS",
+    "type": "mixed",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Mãe de Deus",
+    "code": "HMDDRS",
+    "city": "Porto Alegre",
+    "state": "RS",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Divina Providência",
+    "code": "HDPRS",
+    "city": "Porto Alegre",
+    "state": "RS",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Ernesto Dornelles",
+    "code": "HEDRS",
+    "city": "Porto Alegre",
+    "state": "RS",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Conceição",
+    "code": "HCRS",
+    "city": "Porto Alegre",
+    "state": "RS",
+    "type": "public",
+    "network": "Grupo Hospitalar Conceição",
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Cristo Redentor",
+    "code": "HCRRS",
+    "city": "Porto Alegre",
+    "state": "RS",
+    "type": "public",
+    "network": "Grupo Hospitalar Conceição",
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Fêmina",
+    "code": "HFRS",
+    "city": "Porto Alegre",
+    "state": "RS",
+    "type": "public",
+    "network": "Grupo Hospitalar Conceição",
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Unimed Porto Alegre",
+    "code": "HUPARS",
+    "city": "Porto Alegre",
+    "state": "RS",
+    "type": "private",
+    "network": "Unimed",
+    "isPreRegistered": true
+  },
+  {
+    "name": "Santa Casa de Porto Alegre",
+    "code": "SCDPARS",
+    "city": "Porto Alegre",
+    "state": "RS",
+    "type": "mixed",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital São Vicente de Paulo",
+    "code": "HSVDPRS",
+    "city": "Passo Fundo",
+    "state": "RS",
+    "type": "mixed",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital de Caridade de Ijuí",
+    "code": "HDCDIRS",
+    "city": "Ijuí",
+    "state": "RS",
+    "type": "mixed",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Bruno Born",
+    "code": "HBBRS",
+    "city": "Lajeado",
+    "state": "RS",
+    "type": "mixed",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Universitário Cajuru",
+    "code": "HUCPR",
+    "city": "Curitiba",
+    "state": "PR",
+    "type": "mixed",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital de Clínicas da UFPR",
+    "code": "HDCDUPR",
+    "city": "Curitiba",
+    "state": "PR",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Pequeno Príncipe",
+    "code": "HPPPR",
+    "city": "Curitiba",
+    "state": "PR",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Marcelino Champagnat",
+    "code": "HMCPR",
+    "city": "Curitiba",
+    "state": "PR",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Nossa Senhora das Graças",
+    "code": "HNSDGPR",
+    "city": "Curitiba",
+    "state": "PR",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Erasto Gaertner",
+    "code": "HEGPR",
+    "city": "Curitiba",
+    "state": "PR",
+    "type": "mixed",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital do Trabalhador",
+    "code": "HDTPR",
+    "city": "Curitiba",
+    "state": "PR",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Evangélico Mackenzie",
+    "code": "HEMPR",
+    "city": "Curitiba",
+    "state": "PR",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital São Vicente",
+    "code": "HSVPR",
+    "city": "Curitiba",
+    "state": "PR",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Universitário de Londrina",
+    "code": "HUDLPR",
+    "city": "Londrina",
+    "state": "PR",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Universitário de Maringá",
+    "code": "HUDMPR",
+    "city": "Maringá",
+    "state": "PR",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Unimed Curitiba",
+    "code": "HUCPR2",
+    "city": "Curitiba",
+    "state": "PR",
+    "type": "private",
+    "network": "Unimed",
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Universitário da UFSC",
+    "code": "HUDUSC",
+    "city": "Florianópolis",
+    "state": "SC",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Baía Sul",
+    "code": "HBSSC",
+    "city": "Florianópolis",
+    "state": "SC",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital SOS Cárdio",
+    "code": "HSCSC",
+    "city": "Florianópolis",
+    "state": "SC",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Unimed Florianópolis",
+    "code": "HUFSC",
+    "city": "Florianópolis",
+    "state": "SC",
+    "type": "private",
+    "network": "Unimed",
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Regional de São José",
+    "code": "HRDSJSC",
+    "city": "São José",
+    "state": "SC",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Dona Helena",
+    "code": "HDHSC",
+    "city": "Joinville",
+    "state": "SC",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Municipal São José",
+    "code": "HMSJSC",
+    "city": "Joinville",
+    "state": "SC",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Santa Isabel",
+    "code": "HSISC",
+    "city": "Blumenau",
+    "state": "SC",
+    "type": "mixed",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital de Base do Distrito Federal",
+    "code": "HDBDDFDF",
+    "city": "Brasília",
+    "state": "DF",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Regional da Asa Norte (HRAN)",
+    "code": "HRDANDF",
+    "city": "Brasília",
+    "state": "DF",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Regional da Asa Sul (HRAS)",
+    "code": "HRDASDF",
+    "city": "Brasília",
+    "state": "DF",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Regional de Taguatinga",
+    "code": "HRDTDF",
+    "city": "Brasília",
+    "state": "DF",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Regional de Ceilândia",
+    "code": "HRDCDF",
+    "city": "Brasília",
+    "state": "DF",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Regional do Gama",
+    "code": "HRDGDF",
+    "city": "Brasília",
+    "state": "DF",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Regional de Sobradinho",
+    "code": "HRDSDF",
+    "city": "Brasília",
+    "state": "DF",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Universitário de Brasília (HUB)",
+    "code": "HUDBDF",
+    "city": "Brasília",
+    "state": "DF",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Santa Lúcia",
+    "code": "HSLDF",
+    "city": "Brasília",
+    "state": "DF",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Santa Luzia",
+    "code": "HSLDF2",
+    "city": "Brasília",
+    "state": "DF",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Daher",
+    "code": "HDDF",
+    "city": "Brasília",
+    "state": "DF",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Brasília",
+    "code": "HBDF",
+    "city": "Brasília",
+    "state": "DF",
+    "type": "private",
+    "network": "Rede D'Or",
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Santa Marta",
+    "code": "HSMDF",
+    "city": "Brasília",
+    "state": "DF",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Home",
+    "code": "HHDF",
+    "city": "Brasília",
+    "state": "DF",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Anchieta",
+    "code": "HADF",
+    "city": "Brasília",
+    "state": "DF",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital São Rafael",
+    "code": "HSRBA",
+    "city": "Salvador",
+    "state": "BA",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Português",
+    "code": "HPBA",
+    "city": "Salvador",
+    "state": "BA",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital da Bahia",
+    "code": "HDBBA",
+    "city": "Salvador",
+    "state": "BA",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Aliança",
+    "code": "HABA",
+    "city": "Salvador",
+    "state": "BA",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Jorge Valente",
+    "code": "HJVBA",
+    "city": "Salvador",
+    "state": "BA",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Geral Roberto Santos",
+    "code": "HGRSBA",
+    "city": "Salvador",
+    "state": "BA",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Universitário Professor Edgard Santos (UFBA)",
+    "code": "HUPESBA",
+    "city": "Salvador",
+    "state": "BA",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Cardio Pulmonar",
+    "code": "HCPBA",
+    "city": "Salvador",
+    "state": "BA",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Santa Izabel",
+    "code": "HSIBA",
+    "city": "Salvador",
+    "state": "BA",
+    "type": "mixed",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Cárdio Pulmonar",
+    "code": "HCPBA2",
+    "city": "Salvador",
+    "state": "BA",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Unimed Salvador",
+    "code": "HUSBA",
+    "city": "Salvador",
+    "state": "BA",
+    "type": "private",
+    "network": "Unimed",
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Esperança Recife",
+    "code": "HERPE",
+    "city": "Recife",
+    "state": "PE",
+    "type": "private",
+    "network": "Rede D'Or",
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Esperança Olinda",
+    "code": "HEOPE",
+    "city": "Olinda",
+    "state": "PE",
+    "type": "private",
+    "network": "Rede D'Or",
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Memorial São José",
+    "code": "HMSJPE",
+    "city": "Recife",
+    "state": "PE",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Português de Recife",
+    "code": "HPDRPE",
+    "city": "Recife",
+    "state": "PE",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital das Clínicas da UFPE",
+    "code": "HDCDUPE",
+    "city": "Recife",
+    "state": "PE",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital da Restauração",
+    "code": "HDRPE",
+    "city": "Recife",
+    "state": "PE",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Getúlio Vargas",
+    "code": "HGVPE",
+    "city": "Recife",
+    "state": "PE",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Agamenon Magalhães",
+    "code": "HAMPE",
+    "city": "Recife",
+    "state": "PE",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Barão de Lucena",
+    "code": "HBDLPE",
+    "city": "Recife",
+    "state": "PE",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Real Hospital Português",
+    "code": "RHPPE",
+    "city": "Recife",
+    "state": "PE",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Unimed Recife",
+    "code": "HURPE",
+    "city": "Recife",
+    "state": "PE",
+    "type": "private",
+    "network": "Unimed",
+    "isPreRegistered": true
+  },
+  {
+    "name": "Instituto de Medicina Integral Prof. Fernando Figueira (IMIP)",
+    "code": "IDMIPFPE",
+    "city": "Recife",
+    "state": "PE",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Geral de Fortaleza",
+    "code": "HGDFCE",
+    "city": "Fortaleza",
+    "state": "CE",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Universitário Walter Cantídio (UFC)",
+    "code": "HUWCCE",
+    "city": "Fortaleza",
+    "state": "CE",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital São Carlos",
+    "code": "HSCCE",
+    "city": "Fortaleza",
+    "state": "CE",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Monte Klinikum",
+    "code": "HMKCE",
+    "city": "Fortaleza",
+    "state": "CE",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Unimed Fortaleza",
+    "code": "HUFCE",
+    "city": "Fortaleza",
+    "state": "CE",
+    "type": "private",
+    "network": "Unimed",
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Regional do Cariri",
+    "code": "HRDCCE",
+    "city": "Juazeiro do Norte",
+    "state": "CE",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital São Mateus",
+    "code": "HSMCE",
+    "city": "Fortaleza",
+    "state": "CE",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Antônio Prudente",
+    "code": "HAPCE",
+    "city": "Fortaleza",
+    "state": "CE",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Cura D'Ars",
+    "code": "HCDCE",
+    "city": "Fortaleza",
+    "state": "CE",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Regional Norte",
+    "code": "HRNCE",
+    "city": "Sobral",
+    "state": "CE",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Santa Casa de Fortaleza",
+    "code": "SCDFCE",
+    "city": "Fortaleza",
+    "state": "CE",
+    "type": "mixed",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital das Clínicas da UFG",
+    "code": "HDCDUGO",
+    "city": "Goiânia",
+    "state": "GO",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Araújo Jorge",
+    "code": "HAJGO",
+    "city": "Goiânia",
+    "state": "GO",
+    "type": "mixed",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Santa Genoveva",
+    "code": "HSGGO",
+    "city": "Goiânia",
+    "state": "GO",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Encore",
+    "code": "HEGO",
+    "city": "Goiânia",
+    "state": "GO",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Unimed Goiânia",
+    "code": "HUGGO",
+    "city": "Goiânia",
+    "state": "GO",
+    "type": "private",
+    "network": "Unimed",
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital de Urgências de Goiânia (HUGO)",
+    "code": "HDUDGGO",
+    "city": "Goiânia",
+    "state": "GO",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Geral de Goiânia (HGG)",
+    "code": "HGDGGO",
+    "city": "Goiânia",
+    "state": "GO",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Materno Infantil",
+    "code": "HMIGO",
+    "city": "Goiânia",
+    "state": "GO",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Ophir Loyola",
+    "code": "HOLPA",
+    "city": "Belém",
+    "state": "PA",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital de Clínicas Gaspar Vianna",
+    "code": "HDCGVPA",
+    "city": "Belém",
+    "state": "PA",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Universitário João de Barros Barreto",
+    "code": "HUJDBBPA",
+    "city": "Belém",
+    "state": "PA",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Porto Dias",
+    "code": "HPDPA",
+    "city": "Belém",
+    "state": "PA",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Saúde da Mulher",
+    "code": "HSDMPA",
+    "city": "Belém",
+    "state": "PA",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Unimed Belém",
+    "code": "HUBPA",
+    "city": "Belém",
+    "state": "PA",
+    "type": "private",
+    "network": "Unimed",
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Universitário da UFMA",
+    "code": "HUDUMA",
+    "city": "São Luís",
+    "state": "MA",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital São Domingos",
+    "code": "HSDMA",
+    "city": "São Luís",
+    "state": "MA",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital UDI",
+    "code": "HUMA",
+    "city": "São Luís",
+    "state": "MA",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Unimed São Luís",
+    "code": "HUSLMA",
+    "city": "São Luís",
+    "state": "MA",
+    "type": "private",
+    "network": "Unimed",
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Universitário Getúlio Vargas",
+    "code": "HUGVAM",
+    "city": "Manaus",
+    "state": "AM",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital e Pronto-Socorro 28 de Agosto",
+    "code": "HEPDAAM",
+    "city": "Manaus",
+    "state": "AM",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital e Pronto-Socorro João Lúcio",
+    "code": "HEPJLAM",
+    "city": "Manaus",
+    "state": "AM",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Adventista de Manaus",
+    "code": "HADMAM",
+    "city": "Manaus",
+    "state": "AM",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Unimed Manaus",
+    "code": "HUMAM",
+    "city": "Manaus",
+    "state": "AM",
+    "type": "private",
+    "network": "Unimed",
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Samel",
+    "code": "HSAM",
+    "city": "Manaus",
+    "state": "AM",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Universitário da UFMS",
+    "code": "HUDUMS",
+    "city": "Campo Grande",
+    "state": "MS",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Regional de Mato Grosso do Sul",
+    "code": "HRDMGDMS",
+    "city": "Campo Grande",
+    "state": "MS",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Unimed Campo Grande",
+    "code": "HUCGMS",
+    "city": "Campo Grande",
+    "state": "MS",
+    "type": "private",
+    "network": "Unimed",
+    "isPreRegistered": true
+  },
+  {
+    "name": "Santa Casa de Campo Grande",
+    "code": "SCDCGMS",
+    "city": "Campo Grande",
+    "state": "MS",
+    "type": "mixed",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Geral Universitário",
+    "code": "HGUMT",
+    "city": "Cuiabá",
+    "state": "MT",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Santa Rosa",
+    "code": "HSRMT",
+    "city": "Cuiabá",
+    "state": "MT",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Unimed Cuiabá",
+    "code": "HUCMT",
+    "city": "Cuiabá",
+    "state": "MT",
+    "type": "private",
+    "network": "Unimed",
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Municipal de Cuiabá",
+    "code": "HMDCMT",
+    "city": "Cuiabá",
+    "state": "MT",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Universitário Cassiano Antônio Moraes (UFES)",
+    "code": "HUCAMES",
+    "city": "Vitória",
+    "state": "ES",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Estadual Dr. Jayme Santos Neves",
+    "code": "HEDJSNES",
+    "city": "Serra",
+    "state": "ES",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Meridional",
+    "code": "HMES",
+    "city": "Cariacica",
+    "state": "ES",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Metropolitano",
+    "code": "HMES2",
+    "city": "Serra",
+    "state": "ES",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Unimed Vitória",
+    "code": "HUVES",
+    "city": "Vitória",
+    "state": "ES",
+    "type": "private",
+    "network": "Unimed",
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Santa Rita de Cássia",
+    "code": "HSRDCES",
+    "city": "Vitória",
+    "state": "ES",
+    "type": "mixed",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Universitário Professor Alberto Antunes (UFAL)",
+    "code": "HUPAAAL",
+    "city": "Maceió",
+    "state": "AL",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Geral do Estado (HGE)",
+    "code": "HGDEAL",
+    "city": "Maceió",
+    "state": "AL",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Memorial Arthur Ramos",
+    "code": "HMARAL",
+    "city": "Maceió",
+    "state": "AL",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Unimed Maceió",
+    "code": "HUMAL",
+    "city": "Maceió",
+    "state": "AL",
+    "type": "private",
+    "network": "Unimed",
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Universitário de Sergipe",
+    "code": "HUDSSE",
+    "city": "Aracaju",
+    "state": "SE",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital de Urgência de Sergipe",
+    "code": "HDUDSSE",
+    "city": "Aracaju",
+    "state": "SE",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Unimed Aracaju",
+    "code": "HUASE",
+    "city": "Aracaju",
+    "state": "SE",
+    "type": "private",
+    "network": "Unimed",
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital São Lucas",
+    "code": "HSLSE",
+    "city": "Aracaju",
+    "state": "SE",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Universitário Lauro Wanderley (UFPB)",
+    "code": "HULWPB",
+    "city": "João Pessoa",
+    "state": "PB",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital de Trauma de João Pessoa",
+    "code": "HDTDJPPB",
+    "city": "João Pessoa",
+    "state": "PB",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Unimed João Pessoa",
+    "code": "HUJPPB",
+    "city": "João Pessoa",
+    "state": "PB",
+    "type": "private",
+    "network": "Unimed",
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Nossa Senhora das Neves",
+    "code": "HNSDNPB",
+    "city": "João Pessoa",
+    "state": "PB",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Universitário Onofre Lopes (UFRN)",
+    "code": "HUOLRN",
+    "city": "Natal",
+    "state": "RN",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Walfredo Gurgel",
+    "code": "HWGRN",
+    "city": "Natal",
+    "state": "RN",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Unimed Natal",
+    "code": "HUNRN",
+    "city": "Natal",
+    "state": "RN",
+    "type": "private",
+    "network": "Unimed",
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital do Coração de Natal",
+    "code": "HDCDNRN",
+    "city": "Natal",
+    "state": "RN",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Universitário da UFPI",
+    "code": "HUDUPI",
+    "city": "Teresina",
+    "state": "PI",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Getúlio Vargas",
+    "code": "HGVPI",
+    "city": "Teresina",
+    "state": "PI",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital São Marcos",
+    "code": "HSMPI",
+    "city": "Teresina",
+    "state": "PI",
+    "type": "private",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Unimed Teresina",
+    "code": "HUTPI",
+    "city": "Teresina",
+    "state": "PI",
+    "type": "private",
+    "network": "Unimed",
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Geral de Palmas",
+    "code": "HGDPTO",
+    "city": "Palmas",
+    "state": "TO",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital e Maternidade Dona Regina",
+    "code": "HEMDRTO",
+    "city": "Palmas",
+    "state": "TO",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Unimed Palmas",
+    "code": "HUPTO",
+    "city": "Palmas",
+    "state": "TO",
+    "type": "private",
+    "network": "Unimed",
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital de Base Ary Pinheiro",
+    "code": "HDBAPRO",
+    "city": "Porto Velho",
+    "state": "RO",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital João Paulo II",
+    "code": "HJPIRO",
+    "city": "Porto Velho",
+    "state": "RO",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Unimed Porto Velho",
+    "code": "HUPVRO",
+    "city": "Porto Velho",
+    "state": "RO",
+    "type": "private",
+    "network": "Unimed",
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital de Urgência e Emergência de Rio Branco",
+    "code": "HDUEEDAC",
+    "city": "Rio Branco",
+    "state": "AC",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital das Clínicas do Acre",
+    "code": "HDCDAAC",
+    "city": "Rio Branco",
+    "state": "AC",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital de Clínicas Dr. Alberto Lima",
+    "code": "HDCDALAP",
+    "city": "Macapá",
+    "state": "AP",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital de Emergência Osvaldo Cruz",
+    "code": "HDEOCAP",
+    "city": "Macapá",
+    "state": "AP",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital Geral de Roraima",
+    "code": "HGDRRR",
+    "city": "Boa Vista",
+    "state": "RR",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  },
+  {
+    "name": "Hospital da Criança Santo Antônio",
+    "code": "HDCSARR",
+    "city": "Boa Vista",
+    "state": "RR",
+    "type": "public",
+    "network": null,
+    "isPreRegistered": true
+  }
+]

@@ -1,0 +1,90 @@
+{
+  "version": "7",
+  "dialect": "mysql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1769874938670,
+      "tag": "0000_wealthy_turbo",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1769906689678,
+      "tag": "0001_noisy_silver_fox",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1769910095420,
+      "tag": "0002_solid_major_mapleleaf",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "5",
+      "when": 1769943770396,
+      "tag": "0003_fast_mad_thinker",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "5",
+      "when": 1769944979019,
+      "tag": "0004_complex_invisible_woman",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "5",
+      "when": 1769979733015,
+      "tag": "0005_robust_selene",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "5",
+      "when": 1771333807134,
+      "tag": "0006_petite_surge",
+      "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "5",
+      "when": 1771361946880,
+      "tag": "0007_small_roulette",
+      "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "5",
+      "when": 1771367285556,
+      "tag": "0008_whole_wolfpack",
+      "breakpoints": true
+    },
+    {
+      "idx": 9,
+      "version": "5",
+      "when": 1771369720117,
+      "tag": "0009_narrow_unicorn",
+      "breakpoints": true
+    },
+    {
+      "idx": 10,
+      "version": "5",
+      "when": 1771371253700,
+      "tag": "0010_silent_tag",
+      "breakpoints": true
+    },
+    {
+      "idx": 11,
+      "version": "5",
+      "when": 1771384437586,
+      "tag": "0011_curved_goliath",
+      "breakpoints": true
+    }
+  ]
+}

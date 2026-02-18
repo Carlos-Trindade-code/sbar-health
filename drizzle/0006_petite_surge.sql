@@ -1,0 +1,1 @@
+ALTER TABLE `admissions` MODIFY COLUMN `status` enum('active','discharged','transferred','deceased','archived') NOT NULL DEFAULT 'active';

@@ -1,0 +1,534 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+:root {
+  /* Clinical Teal Primary */
+  --primary: oklch(0.55 0.15 175);
+  --primary-foreground: oklch(0.98 0 0);
+  --sidebar-primary: oklch(0.55 0.15 175);
+  --sidebar-primary-foreground: oklch(0.98 0 0);
+  
+  /* Priority Colors */
+  --color-critical: oklch(0.55 0.22 25);
+  --color-critical-bg: oklch(0.95 0.03 25);
+  --color-high: oklch(0.65 0.18 45);
+  --color-high-bg: oklch(0.95 0.03 45);
+  --color-medium: oklch(0.75 0.15 85);
+  --color-medium-bg: oklch(0.95 0.03 85);
+  --color-low: oklch(0.65 0.15 145);
+  --color-low-bg: oklch(0.95 0.03 145);
+  
+  /* Success/Warning */
+  --color-success: oklch(0.65 0.18 145);
+  --color-success-bg: oklch(0.95 0.03 145);
+  --color-warning: oklch(0.75 0.15 85);
+  --color-warning-bg: oklch(0.95 0.03 85);
+  
+  --chart-1: oklch(0.55 0.15 175);
+  --chart-2: oklch(0.65 0.18 145);
+  --chart-3: oklch(0.75 0.15 85);
+  --chart-4: oklch(0.55 0.22 25);
+  --chart-5: oklch(0.45 0.05 250);
+  --radius: 0.65rem;
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.235 0.015 65);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.235 0.015 65);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.235 0.015 65);
+  --secondary: oklch(0.98 0.001 286.375);
+  --secondary-foreground: oklch(0.4 0.015 65);
+  --muted: oklch(0.967 0.001 286.375);
+  --muted-foreground: oklch(0.552 0.016 285.938);
+  --accent: oklch(0.967 0.001 286.375);
+  --accent-foreground: oklch(0.141 0.005 285.823);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.985 0 0);
+  --border: oklch(0.92 0.004 286.32);
+  --input: oklch(0.92 0.004 286.32);
+  --ring: oklch(0.623 0.214 259.815);
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.235 0.015 65);
+  --sidebar-accent: oklch(0.967 0.001 286.375);
+  --sidebar-accent-foreground: oklch(0.141 0.005 285.823);
+  --sidebar-border: oklch(0.92 0.004 286.32);
+  --sidebar-ring: oklch(0.623 0.214 259.815);
+}
+
+.dark {
+  --primary: var(--color-blue-700);
+  --primary-foreground: var(--color-blue-50);
+  --sidebar-primary: var(--color-blue-500);
+  --sidebar-primary-foreground: var(--color-blue-50);
+  --background: oklch(0.141 0.005 285.823);
+  --foreground: oklch(0.85 0.005 65);
+  --card: oklch(0.21 0.006 285.885);
+  --card-foreground: oklch(0.85 0.005 65);
+  --popover: oklch(0.21 0.006 285.885);
+  --popover-foreground: oklch(0.85 0.005 65);
+  --secondary: oklch(0.24 0.006 286.033);
+  --secondary-foreground: oklch(0.7 0.005 65);
+  --muted: oklch(0.274 0.006 286.033);
+  --muted-foreground: oklch(0.705 0.015 286.067);
+  --accent: oklch(0.274 0.006 286.033);
+  --accent-foreground:  oklch(0.92 0.005 65);
+  --destructive: oklch(0.704 0.191 22.216);
+  --destructive-foreground: oklch(0.985 0 0);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.488 0.243 264.376);
+  --chart-1: var(--color-blue-300);
+  --chart-2: var(--color-blue-500);
+  --chart-3: var(--color-blue-600);
+  --chart-4: var(--color-blue-700);
+  --chart-5: var(--color-blue-800);
+  --sidebar: oklch(0.21 0.006 285.885);
+  --sidebar-foreground: oklch(0.85 0.005 65);
+  --sidebar-accent: oklch(0.274 0.006 286.033);
+  --sidebar-accent-foreground:  oklch(0.985 0 0);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.488 0.243 264.376);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  button:not(:disabled),
+  [role="button"]:not([aria-disabled="true"]),
+  [type="button"]:not(:disabled),
+  [type="submit"]:not(:disabled),
+  [type="reset"]:not(:disabled),
+  a[href],
+  select:not(:disabled),
+  input[type="checkbox"]:not(:disabled),
+  input[type="radio"]:not(:disabled) {
+    @apply cursor-pointer;
+  }
+}
+
+@layer components {
+  /* Priority badges */
+  .badge-critical {
+    background-color: var(--color-critical-bg);
+    color: var(--color-critical);
+  }
+  .badge-high {
+    background-color: var(--color-high-bg);
+    color: var(--color-high);
+  }
+  .badge-medium {
+    background-color: var(--color-medium-bg);
+    color: var(--color-medium);
+  }
+  .badge-low {
+    background-color: var(--color-low-bg);
+    color: var(--color-low);
+  }
+  
+  /* SBAR Section styling */
+  .sbar-section {
+    @apply relative pl-4 border-l-4 py-2;
+  }
+  .sbar-s { border-left-color: oklch(0.55 0.15 175); }
+  .sbar-b { border-left-color: oklch(0.45 0.05 250); }
+  .sbar-a { border-left-color: oklch(0.75 0.15 85); }
+  .sbar-r { border-left-color: oklch(0.65 0.18 145); }
+  
+  /* Priority indicator */
+  .priority-indicator {
+    @apply absolute left-0 top-4 bottom-4 w-1 rounded-full;
+  }
+  .priority-indicator.critical { background-color: var(--color-critical); }
+  .priority-indicator.high { background-color: var(--color-high); }
+  .priority-indicator.medium { background-color: var(--color-medium); }
+  .priority-indicator.low { background-color: var(--color-low); }
+  
+  /* Glass effect */
+  .glass {
+    @apply bg-white/80 backdrop-blur-lg;
+  }
+  
+  /* Pulse animation */
+  @keyframes pulse-critical {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.6; }
+  }
+  .animate-pulse-critical {
+    animation: pulse-critical 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+}
+
+@layer components {
+  /**
+   * Custom container utility that centers content and adds responsive padding.
+   *
+   * This overrides Tailwind's default container behavior to:
+   * - Auto-center content (mx-auto)
+   * - Add responsive horizontal padding
+   * - Set max-width for large screens
+   *
+   * Usage: <div className="container">...</div>
+   *
+   * For custom widths, use max-w-* utilities directly:
+   * <div className="max-w-6xl mx-auto px-4">...</div>
+   */
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem; /* 16px - mobile padding */
+    padding-right: 1rem;
+  }
+
+  .flex {
+    min-height: 0;
+    min-width: 0;
+  }
+
+  @media (min-width: 640px) {
+    .container {
+      padding-left: 1.5rem; /* 24px - tablet padding */
+      padding-right: 1.5rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container {
+      padding-left: 2rem; /* 32px - desktop padding */
+      padding-right: 2rem;
+      max-width: 1280px; /* Standard content width */
+    }
+  }
+}
+
+/* Accordion/Collapsible Animations */
+@layer components {
+  /* Smooth accordion open/close animations */
+  @keyframes accordion-down {
+    from {
+      height: 0;
+      opacity: 0;
+    }
+    to {
+      height: var(--radix-collapsible-content-height);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes accordion-up {
+    from {
+      height: var(--radix-collapsible-content-height);
+      opacity: 1;
+    }
+    to {
+      height: 0;
+      opacity: 0;
+    }
+  }
+  
+  /* Patient card expand animation */
+  @keyframes patient-expand {
+    from {
+      opacity: 0;
+      transform: translateY(-8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes patient-collapse {
+    from {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateY(-8px);
+    }
+  }
+  
+  /* Slide down animation for content */
+  @keyframes slide-down {
+    from {
+      opacity: 0;
+      max-height: 0;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+    to {
+      opacity: 1;
+      max-height: 1000px;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+  }
+  
+  @keyframes slide-up {
+    from {
+      opacity: 1;
+      max-height: 1000px;
+    }
+    to {
+      opacity: 0;
+      max-height: 0;
+    }
+  }
+  
+  /* Apply animations to Radix Collapsible */
+  [data-state="open"] > .collapsible-content,
+  [data-state="open"].collapsible-content {
+    animation: accordion-down 0.3s ease-out forwards;
+  }
+  
+  [data-state="closed"] > .collapsible-content,
+  [data-state="closed"].collapsible-content {
+    animation: accordion-up 0.2s ease-in forwards;
+  }
+  
+  /* Patient card specific animations */
+  .patient-card-content[data-state="open"] {
+    animation: patient-expand 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+  
+  .patient-card-content[data-state="closed"] {
+    animation: patient-collapse 0.25s ease-in forwards;
+  }
+  
+  /* Smooth transition for card expansion */
+  .patient-card {
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  
+  .patient-card[data-expanded="true"] {
+    box-shadow: 0 8px 30px -12px rgba(0, 0, 0, 0.15);
+    transform: scale(1.01);
+  }
+  
+  .patient-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px -8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Chevron rotation animation */
+  .accordion-chevron {
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  
+  [data-state="open"] .accordion-chevron {
+    transform: rotate(180deg);
+  }
+  
+  /* Staggered animation for child elements */
+  .patient-card-content > * {
+    animation: fade-slide-in 0.3s ease-out forwards;
+    opacity: 0;
+  }
+  
+  @keyframes fade-slide-in {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .patient-card-content > *:nth-child(1) { animation-delay: 0.05s; }
+  .patient-card-content > *:nth-child(2) { animation-delay: 0.1s; }
+  .patient-card-content > *:nth-child(3) { animation-delay: 0.15s; }
+  .patient-card-content > *:nth-child(4) { animation-delay: 0.2s; }
+  .patient-card-content > *:nth-child(5) { animation-delay: 0.25s; }
+  
+  /* Button hover effects */
+  .action-button {
+    transition: all 0.2s ease;
+  }
+  
+  .action-button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .action-button:active {
+    transform: translateY(0);
+  }
+}
+
+
+/* Tiger Mascot Reaction Animations */
+@layer components {
+  /* Gentle bounce for happy reactions */
+  @keyframes bounce-gentle {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+  }
+  .animate-bounce-gentle {
+    animation: bounce-gentle 0.6s ease-in-out infinite;
+  }
+  
+  /* Wiggle for celebrating */
+  @keyframes wiggle {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(-8deg); }
+    75% { transform: rotate(8deg); }
+  }
+  .animate-wiggle {
+    animation: wiggle 0.5s ease-in-out infinite;
+  }
+  
+  /* Shake for worried/alert */
+  @keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    20%, 60% { transform: translateX(-3px); }
+    40%, 80% { transform: translateX(3px); }
+  }
+  .animate-shake {
+    animation: shake 0.5s ease-in-out infinite;
+  }
+  
+  /* Droop for sad */
+  @keyframes droop {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(3px) rotate(-3deg); }
+  }
+  .animate-droop {
+    animation: droop 1.5s ease-in-out infinite;
+  }
+  
+  /* Wave for greeting */
+  @keyframes wave {
+    0%, 100% { transform: rotate(0deg); }
+    20% { transform: rotate(20deg); }
+    40% { transform: rotate(-10deg); }
+    60% { transform: rotate(15deg); }
+    80% { transform: rotate(-5deg); }
+  }
+  .animate-wave {
+    animation: wave 1s ease-in-out infinite;
+    transform-origin: bottom center;
+  }
+  
+  /* Glow for proud/achievement */
+  @keyframes glow {
+    0%, 100% { 
+      filter: drop-shadow(0 0 2px rgba(251, 191, 36, 0.5));
+      transform: scale(1);
+    }
+    50% { 
+      filter: drop-shadow(0 0 8px rgba(251, 191, 36, 0.8));
+      transform: scale(1.05);
+    }
+  }
+  .animate-glow {
+    animation: glow 1.5s ease-in-out infinite;
+  }
+  
+  /* Float for sleeping/idle */
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-4px); }
+  }
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  /* Pop for surprised */
+  @keyframes pop {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.15); }
+    100% { transform: scale(1); }
+  }
+  .animate-pop {
+    animation: pop 0.4s ease-out;
+  }
+  
+  /* Confetti burst effect */
+  @keyframes confetti {
+    0% { 
+      opacity: 1;
+      transform: translateY(0) rotate(0deg);
+    }
+    100% { 
+      opacity: 0;
+      transform: translateY(-30px) rotate(360deg);
+    }
+  }
+  .animate-confetti {
+    animation: confetti 1s ease-out forwards;
+  }
+}
+
+/* Hide scrollbar for horizontal scroll containers */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* Copy protection - prevent source code inspection and content theft */
+.copy-protect {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Allow text selection in input fields and text areas */
+input, textarea, [contenteditable="true"], .selectable {
+  -webkit-user-select: text !important;
+  -moz-user-select: text !important;
+  -ms-user-select: text !important;
+  user-select: text !important;
+}
