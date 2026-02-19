@@ -64,6 +64,9 @@ async function startServer() {
   console.log("======================");
   await runMigrations();
   const app = express();
+  // Trust Railway's reverse proxy so req.ip, req.protocol and
+  // req.hostname reflect the real client values.
+  app.set("trust proxy", 1);
   const server = createServer(app);
   // Simple health endpoint for Railway healthcheck (before tRPC)
   app.get("/api/health", (_req, res) => {
