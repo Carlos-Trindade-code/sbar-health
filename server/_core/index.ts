@@ -47,8 +47,9 @@ async function runMigrations() {
     }
     await db.execute(sql`SELECT 1`);
     console.log("[DB] Connection OK");
-    // Resolve migrations folder relative to the running file
-    const migrationsFolder = path.resolve(import.meta.dirname, "../../drizzle");
+    // Resolve migrations folder from project root (process.cwd() = /app on Railway)
+    // import.meta.dirname would be /app/dist — using cwd() is more reliable
+    const migrationsFolder = path.resolve(process.cwd(), "drizzle");
     console.log("[DB] Running migrations from:", migrationsFolder);
     await migrate(db as any, { migrationsFolder });
     console.log("[DB] Migrations applied successfully");
