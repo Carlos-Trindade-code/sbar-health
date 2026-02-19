@@ -2,11 +2,13 @@ import "dotenv/config";
 import express from "express";
 import { createServer } from "http";
 import net from "net";
+import { sql } from "drizzle-orm";
 import { createExpressMiddleware } from "@trpc/server/adapters/express";
 import { registerOAuthRoutes } from "./oauth";
 import { appRouter } from "../routers";
 import { createContext } from "./context";
 import { serveStatic, setupVite } from "./vite";
+import { getDb } from "../db";
 
 function isPortAvailable(port: number): Promise<boolean> {
   return new Promise(resolve => {
@@ -27,8 +29,34 @@ async function findAvailablePort(startPort: number = 3000): Promise<number> {
   throw new Error(`No available port found starting from ${startPort}`);
 }
 
+async function checkDatabase() {
+  const url = process.env.DATABASE_URL;
+  if (!url) {
+    console.error("[DB] ERROR: DATABASE_URL is not set");
+    return;
+  }
+  // Log masked URL (hide password)
+  const masked = url.replace(/:\/\/([^:]+):([^@]+)@/, "://$1:***@");
+  console.log("[DB] Connecting to:", masked);
+  try {
+    const db = await getDb();
+    if (!db) {
+      console.error("[DB] ERROR: getDb() returned null");
+      return;
+    }
+    await db.execute(sql`SELECT 1`);
+    console.log("[DB] Connection OK");
+  } catch (err) {
+    console.error("[DB] Connection FAILED:", err);
+  }
+}
+
 async function startServer() {
+  console.log("=== SERVER STARTUP ===");
   console.log("PORT env:", process.env.PORT);
+  console.log("NODE_ENV:", process.env.NODE_ENV);
+  console.log("======================");
+  await checkDatabase();
   const app = express();
   const server = createServer(app);
   // Configure body parser with larger size limit for file uploads

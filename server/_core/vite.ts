@@ -58,6 +58,8 @@ export function serveStatic(app: Express) {
     );
   }
 
+  console.log("[Static] Serving from:", distPath);
+  console.log("[Static] Directory exists:", fs.existsSync(distPath));
   app.use(express.static(distPath));
 
   // fall through to index.html if the file doesn't exist
