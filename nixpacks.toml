@@ -1,5 +1,5 @@
 [variables]
-NIXPACKS_PATH = "/root/.npm-global/bin:$PATH"
+NODE_ENV = "production"
 NPM_CONFIG_PREFIX = "/root/.npm-global"
 
 [phases.setup]
@@ -8,11 +8,11 @@ nixPkgs = ["nodejs_22"]
 [phases.install]
 cmds = [
   "npm install -g pnpm@10.4.1",
-  "pnpm install --frozen-lockfile"
+  "export PATH=/root/.npm-global/bin:$PATH && pnpm install --frozen-lockfile"
 ]
 
 [phases.build]
-cmds = ["pnpm build"]
+cmds = ["export PATH=/root/.npm-global/bin:$PATH && pnpm build"]
 
 [start]
-cmd = "pnpm start"
+cmd = "node dist/index.js"

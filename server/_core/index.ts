@@ -2,7 +2,9 @@ import "dotenv/config";
 import express from "express";
 import { createServer } from "http";
 import net from "net";
+import path from "path";
 import { sql } from "drizzle-orm";
+import { migrate } from "drizzle-orm/mysql2/migrator";
 import { createExpressMiddleware } from "@trpc/server/adapters/express";
 import { registerOAuthRoutes } from "./oauth";
 import { appRouter } from "../routers";
@@ -29,13 +31,12 @@ async function findAvailablePort(startPort: number = 3000): Promise<number> {
   throw new Error(`No available port found starting from ${startPort}`);
 }
 
-async function checkDatabase() {
+async function runMigrations() {
   const url = process.env.DATABASE_URL;
   if (!url) {
-    console.error("[DB] ERROR: DATABASE_URL is not set");
+    console.error("[DB] ERROR: DATABASE_URL is not set — skipping migrations");
     return;
   }
-  // Log masked URL (hide password)
   const masked = url.replace(/:\/\/([^:]+):([^@]+)@/, "://$1:***@");
   console.log("[DB] Connecting to:", masked);
   try {
@@ -46,8 +47,13 @@ async function checkDatabase() {
     }
     await db.execute(sql`SELECT 1`);
     console.log("[DB] Connection OK");
+    // Resolve migrations folder relative to the running file
+    const migrationsFolder = path.resolve(import.meta.dirname, "../../drizzle");
+    console.log("[DB] Running migrations from:", migrationsFolder);
+    await migrate(db as any, { migrationsFolder });
+    console.log("[DB] Migrations applied successfully");
   } catch (err) {
-    console.error("[DB] Connection FAILED:", err);
+    console.error("[DB] Migration FAILED:", err);
   }
 }
 
@@ -56,13 +62,17 @@ async function startServer() {
   console.log("PORT env:", process.env.PORT);
   console.log("NODE_ENV:", process.env.NODE_ENV);
   console.log("======================");
-  await checkDatabase();
+  await runMigrations();
   const app = express();
   const server = createServer(app);
+  // Simple health endpoint for Railway healthcheck (before tRPC)
+  app.get("/api/health", (_req, res) => {
+    res.json({ ok: true });
+  });
   // Configure body parser with larger size limit for file uploads
   app.use(express.json({ limit: "50mb" }));
   app.use(express.urlencoded({ limit: "50mb", extended: true }));
-  // OAuth callback under /api/oauth/callback
+  // Auth routes
   registerOAuthRoutes(app);
   // tRPC API
   app.use(
