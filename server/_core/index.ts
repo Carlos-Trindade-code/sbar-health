@@ -3,14 +3,14 @@ import express from "express";
 import { createServer } from "http";
 import net from "net";
 import path from "path";
-import { sql } from "drizzle-orm";
+import mysql from "mysql2/promise";
+import { drizzle } from "drizzle-orm/mysql2";
 import { migrate } from "drizzle-orm/mysql2/migrator";
 import { createExpressMiddleware } from "@trpc/server/adapters/express";
 import { registerOAuthRoutes } from "./oauth";
 import { appRouter } from "../routers";
 import { createContext } from "./context";
 import { serveStatic, setupVite } from "./vite";
-import { getDb } from "../db";
 
 function isPortAvailable(port: number): Promise<boolean> {
   return new Promise(resolve => {
@@ -34,27 +34,34 @@ async function findAvailablePort(startPort: number = 3000): Promise<number> {
 async function runMigrations() {
   const url = process.env.DATABASE_URL;
   if (!url) {
-    console.error("[DB] ERROR: DATABASE_URL is not set — skipping migrations");
+    console.error("[DB] DATABASE_URL is not set — skipping migrations");
     return;
   }
   const masked = url.replace(/:\/\/([^:]+):([^@]+)@/, "://$1:***@");
-  console.log("[DB] Connecting to:", masked);
+  console.log("[DB] Running migrations, connecting to:", masked);
+
+  // Use a dedicated single connection for migrations (separate from the app pool).
+  // This connection is explicitly closed after migrations so it cannot interfere
+  // with the pool used by the rest of the application.
+  let connection: mysql.Connection | undefined;
   try {
-    const db = await getDb();
-    if (!db) {
-      console.error("[DB] ERROR: getDb() returned null");
-      return;
-    }
-    await db.execute(sql`SELECT 1`);
-    console.log("[DB] Connection OK");
-    // Resolve migrations folder from project root (process.cwd() = /app on Railway)
-    // import.meta.dirname would be /app/dist — using cwd() is more reliable
+    connection = await mysql.createConnection(url);
+    console.log("[DB] Migration connection established");
+    const migrationDb = drizzle(connection);
     const migrationsFolder = path.resolve(process.cwd(), "drizzle");
-    console.log("[DB] Running migrations from:", migrationsFolder);
-    await migrate(db as any, { migrationsFolder });
+    console.log("[DB] Migrations folder:", migrationsFolder);
+    await migrate(migrationDb, { migrationsFolder });
     console.log("[DB] Migrations applied successfully");
   } catch (err) {
     console.error("[DB] Migration FAILED:", err);
+    // Do not throw — let the server start even if migrations fail, so we
+    // can read the logs. A failed migration typically means the DB is
+    // already up-to-date or there is a connection/SSL issue to diagnose.
+  } finally {
+    if (connection) {
+      await connection.end().catch(() => {});
+      console.log("[DB] Migration connection closed");
+    }
   }
 }
 

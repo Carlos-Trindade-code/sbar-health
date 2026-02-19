@@ -1,7 +1,8 @@
 import { eq, and, desc, sql, like, or, gte, lte, count, avg, inArray } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/mysql2";
-import { 
-  InsertUser, users, 
+import mysql from "mysql2/promise";
+import {
+  InsertUser, users,
   hospitalNetworks, InsertHospitalNetwork, HospitalNetwork,
   hospitals, InsertHospital, Hospital,
   teams, InsertTeam, Team,
@@ -23,13 +24,14 @@ import { ENV } from './_core/env';
 let _db: ReturnType<typeof drizzle> | null = null;
 
 export async function getDb() {
-  if (!_db && process.env.DATABASE_URL) {
-    try {
-      _db = drizzle(process.env.DATABASE_URL);
-    } catch (error) {
-      console.warn("[Database] Failed to connect:", error);
-      _db = null;
+  if (!_db) {
+    const url = process.env.DATABASE_URL;
+    if (!url) {
+      throw new Error("[DB] DATABASE_URL is not set");
     }
+    const pool = mysql.createPool(url);
+    _db = drizzle(pool);
+    console.log("[DB] Pool created");
   }
   return _db;
 }
@@ -41,10 +43,6 @@ export async function upsertUser(user: InsertUser): Promise<void> {
   }
 
   const db = await getDb();
-  if (!db) {
-    console.warn("[Database] Cannot upsert user: database not available");
-    return;
-  }
 
   try {
     const values: InsertUser = { openId: user.openId };
