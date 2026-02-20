@@ -85,6 +85,13 @@
       "when": 1771384437586,
       "tag": "0011_curved_goliath",
       "breakpoints": true
+    },
+    {
+      "idx": 12,
+      "version": "5",
+      "when": 1740009600000,
+      "tag": "0012_add_password_hash",
+      "breakpoints": true
     }
   ]
 }
