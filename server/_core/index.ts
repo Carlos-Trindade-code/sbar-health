@@ -31,6 +31,41 @@ async function findAvailablePort(startPort: number = 3000): Promise<number> {
   throw new Error(`No available port found starting from ${startPort}`);
 }
 
+// All tables in dependency order (children before parents) so FK constraints
+// don't block the drops.
+const ALL_TABLES = [
+  "support_tickets",
+  "push_subscriptions",
+  "notifications",
+  "subscriptions",
+  "activity_logs",
+  "ai_predictions",
+  "evolutions",
+  "admissions",
+  "patients",
+  "hospital_admins",
+  "team_invites",
+  "team_members",
+  "team_hospitals",
+  "teams",
+  "hospitals",
+  "hospital_networks",
+  "users",
+];
+
+async function dropAllTables(connection: mysql.Connection) {
+  console.log("[DB] Dropping all tables...");
+  await connection.query("SET FOREIGN_KEY_CHECKS = 0");
+  for (const table of ALL_TABLES) {
+    await connection.query(`DROP TABLE IF EXISTS \`${table}\``);
+    console.log(`[DB] Dropped: ${table}`);
+  }
+  // Also drop drizzle's internal migrations tracking table so it re-applies all
+  await connection.query("DROP TABLE IF EXISTS `__drizzle_migrations`");
+  await connection.query("SET FOREIGN_KEY_CHECKS = 1");
+  console.log("[DB] All tables dropped");
+}
+
 async function runMigrations() {
   const url = process.env.DATABASE_URL;
   if (!url) {
@@ -41,12 +76,15 @@ async function runMigrations() {
   console.log("[DB] Running migrations, connecting to:", masked);
 
   // Use a dedicated single connection for migrations (separate from the app pool).
-  // This connection is explicitly closed after migrations so it cannot interfere
-  // with the pool used by the rest of the application.
   let connection: mysql.Connection | undefined;
   try {
     connection = await mysql.createConnection(url);
     console.log("[DB] Migration connection established");
+
+    if (process.env.NODE_ENV === "production" && process.env.RESET_DB === "true") {
+      await dropAllTables(connection);
+    }
+
     const migrationDb = drizzle(connection);
     const migrationsFolder = path.resolve(process.cwd(), "drizzle");
     console.log("[DB] Migrations folder:", migrationsFolder);
@@ -54,9 +92,6 @@ async function runMigrations() {
     console.log("[DB] Migrations applied successfully");
   } catch (err) {
     console.error("[DB] Migration FAILED:", err);
-    // Do not throw — let the server start even if migrations fail, so we
-    // can read the logs. A failed migration typically means the DB is
-    // already up-to-date or there is a connection/SSL issue to diagnose.
   } finally {
     if (connection) {
       await connection.end().catch(() => {});
